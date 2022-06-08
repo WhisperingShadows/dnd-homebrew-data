@@ -1,0 +1,143 @@
+{
+	"siteVersion": "1.158.5",
+	"_meta": {
+		"sources": [
+			{
+				"json": "SybilHomebrew",
+				"abbreviation": "SyBrew",
+				"full": "Sybil Homebrew",
+				"url": "",
+				"authors": [
+					"Dania Miller"
+				],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1654648088,
+		"dateLastModified": 1654648088
+	},
+	"spell": [
+		{
+			"name": "Tenser's Improved Jump",
+			"source": "SybilHomebrew",
+			"level": 0,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a grasshopper's hind leg"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You touch a creature. The creature's {@book jump distance|phb|8|Jumping} is tripled until the spell ends."
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Artificer",
+						"source": "UAArtificer"
+					},
+					{
+						"name": "Artificer (Revisited)",
+						"source": "UAArtificerRevisited"
+					},
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Warlock",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Seeker (UA)",
+							"source": "UATheFaithful"
+						}
+					}
+				]
+			},
+			"races": [
+				{
+					"name": "Gith (Githyanki)",
+					"source": "UAEladrinAndGith",
+					"baseName": "Gith",
+					"baseSource": "UAEladrinAndGith"
+				},
+				{
+					"name": "Gith (Githyanki)",
+					"source": "MTF",
+					"baseName": "Gith",
+					"baseSource": "MTF"
+				},
+				{
+					"name": "Human (Mark of Passage)",
+					"source": "ERLW",
+					"baseName": "Human",
+					"baseSource": "PHB"
+				}
+			],
+			"backgrounds": [
+				{
+					"name": "Simic Scientist",
+					"source": "GGR"
+				}
+			],
+			"eldritchInvocations": [
+				{
+					"name": "Otherworldly Leap",
+					"source": "PHB"
+				}
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 1st level or higher, the creature's original {@book jump distance|phb|8|Jumping} increases by 10 feet per spell level."
+					]
+				}
+			]
+		}
+	]
+}
