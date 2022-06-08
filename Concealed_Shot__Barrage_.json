@@ -1,0 +1,67 @@
+{
+	"siteVersion": "1.158.5",
+	"_meta": {
+		"sources": [
+			{
+				"json": "SybilHomebrew",
+				"abbreviation": "SyBrew",
+				"full": "Sybil Homebrew",
+				"url": "",
+				"authors": [
+					"Dania Miller"
+				],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1654654365,
+		"dateLastModified": 1654654365
+	},
+	"spell": [
+		{
+			"name": "Concealed Shot (Barrage)",
+			"source": "SybilHomebrew",
+			"level": 0,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "a ranged weapon"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"The next time you make an attack with a ranged weapon during this spell's duration, the shot is concealed. The attack's projectile is {@condition invisible} while in flight and the weapon itself is silent. If the weapon is a firearm, this spell suppresses the smoke and light the weapon produces, making it impossible to see or hear where the shot came from. ",
+				"The spell conceals more than one shot when you reach higher levels: two shots at 5th level, three shots at 11th level, and four shots at 17th level."
+			],
+			"conditionInflict": [
+				"invisible"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		}
+	]
+}

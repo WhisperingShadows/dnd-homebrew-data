@@ -1,0 +1,67 @@
+{
+	"siteVersion": "1.158.5",
+	"_meta": {
+		"sources": [
+			{
+				"json": "SybilHomebrew",
+				"abbreviation": "SyBrew",
+				"full": "Sybil Homebrew",
+				"url": "",
+				"authors": [
+					"Dania Miller"
+				],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1654654368,
+		"dateLastModified": 1654654368
+	},
+	"spell": [
+		{
+			"name": "Concealed Shot (Enhance)",
+			"source": "SybilHomebrew",
+			"level": 0,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "a ranged weapon"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"As part of the action used to cast this spell, you must make an attack with a ranged weapon, otherwise the spell fails. The attack's projectile is {@condition invisible} while in flight and the weapon itself is silent. If the weapon is a firearm, this spell suppresses the smoke and light the weapon produces, making it impossible to see or hear where the shot came from. ",
+				"On a hit, the target suffers the weapon attack's normal effects and takes an additional {@damage 1d8} force damage.",
+				"This spell's damage increases by {@dice 1d8} when you reach 5th level ({@dice 2d8}), 11th level ({@dice 3d8}), and 17th level ({@dice 4d8})."
+			],
+			"conditionInflict": [
+				"invisible"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"damageInflict": [
+				"force"
+			]
+		}
+	]
+}
