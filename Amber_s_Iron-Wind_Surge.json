@@ -1,0 +1,81 @@
+{
+	"siteVersion": "1.160.1",
+	"_meta": {
+		"sources": [
+			{
+				"json": "SybilHomebrew",
+				"abbreviation": "SyBrew",
+				"full": "Sybil Homebrew",
+				"url": "",
+				"authors": [
+					"Dania Miller"
+				],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1656039581,
+		"dateLastModified": 1656039581
+	},
+	"spell": [
+		{
+			"name": "Amber's Iron-Wind Surge",
+			"source": "SybilHomebrew",
+			"level": 2,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 15
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a melee weapon you are proficient with worth at least 1 cp",
+					"cost": 1
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You flourish a weapon weapon you are proficient with used in the casting and then vanish to strike like the wind. Choose up to three creatures you can see within range. Make a melee weapon or melee spell attack (your choice) against each target. On a hit, a target takes {@damage 3d8} damage of the weapon's damage type.",
+				"You can then teleport to an unoccupied space you can see within 5 feet of one of the targets you hit or missed."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd Level or higher, the damage increases by {@damage 1d8} for each slot level above 2nd."
+					]
+				}
+			],
+			"miscTags": [
+				"SGT",
+				"TP"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		}
+	]
+}
