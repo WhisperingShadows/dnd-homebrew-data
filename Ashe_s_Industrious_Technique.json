@@ -1,0 +1,82 @@
+{
+	"siteVersion": "1.160.1",
+	"_meta": {
+		"sources": [
+			{
+				"json": "SybilHomebrew",
+				"abbreviation": "SyBrew",
+				"full": "Sybil Homebrew",
+				"url": "",
+				"authors": [
+					"Dania Miller"
+				],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1656084820,
+		"dateLastModified": 1656084820
+	},
+	"spell": [
+		{
+			"name": "Ashe's Industrious Technique",
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 8
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Artificer",
+						"source": "ERLW"
+					}
+				]
+			},
+			"entries": [
+				"You touch a willing creature. For the duration, they are able to perform mundane tasks with exceptional speed and energy. Crafting nonmagical items and conducting research while under the influence of this spell takes you a quarter of the normal time. Additionally, you do not require sleep and cannot be put to sleep through any means. Levels of {@condition exhaustion} that would be gained as a result of a lack of sleep are delayed until the spell ends."
+			],
+			"source": "SybilHomebrew",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": true
+			},
+			"meta": {
+				"ritual": true
+			},
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"If you cast this spell using a spell slot of 3rd level or higher, you can affect the crafting of magical items as well."
+					]
+				}
+			],
+			"areaTags": [
+				"ST"
+			]
+		}
+	]
+}
