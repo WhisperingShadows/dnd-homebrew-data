@@ -13,8 +13,8 @@
 				"convertedBy": []
 			}
 		],
-		"dateAdded": 1656084820,
-		"dateLastModified": 1656084820
+		"dateAdded": 1656085577,
+		"dateLastModified": 1656085577
 	},
 	"spell": [
 		{
@@ -59,9 +59,8 @@
 			],
 			"source": "SybilHomebrew",
 			"components": {
-				"v": true,
 				"s": true,
-				"m": true
+				"m": "a tool of any kind"
 			},
 			"meta": {
 				"ritual": true
