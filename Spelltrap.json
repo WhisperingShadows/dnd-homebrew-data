@@ -1,0 +1,85 @@
+{
+	"siteVersion": "1.177.1",
+	"_meta": {
+		"sources": [
+			{
+				"json": "SybilHomebrew",
+				"abbreviation": "SyBrew",
+				"full": "Sybil Homebrew",
+				"url": "",
+				"authors": [
+					"Dania Miller"
+				],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1678476874,
+		"dateLastModified": 1678476874
+	},
+	"spell": [
+		{
+			"name": "Spelltrap",
+			"source": "SybilHomebrew",
+			"level": 2,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 8
+					}
+				}
+			],
+			"entries": [
+				"You create a spelltrap, marking a complex glyph on yourself, typically manifesting as a small glowing mark on your skin. The first time you are hit by or forced to make a saving throw against a spell of 1st level or lower within the duration, the spelltrap activates and then this spell ends.",
+				"When the spelltrap activates, the triggering spell is absorbed and its effects are cancelled. As a reaction to absorbing the triggering spell, you can immediately cast that spell without expending a spell slot."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the maximum level of a spell you can absorb increases by 1 for each slot level above 2nd."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		}
+	]
+}
