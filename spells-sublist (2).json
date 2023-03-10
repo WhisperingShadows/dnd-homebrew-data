@@ -1,0 +1,65 @@
+{
+	"fileType": "spells-sublist",
+	"siteVersion": "1.177.1",
+	"items": [
+		{
+			"h": "intrusive%20thought_vss"
+		},
+		{
+			"h": "transient%20bulwark_vss"
+		},
+		{
+			"h": "arcane%20anomaly_vss"
+		},
+		{
+			"h": "imbue%20knowledge_ccg"
+		},
+		{
+			"h": "quantum%20computing_yag"
+		},
+		{
+			"h": "veinblade_yag"
+		},
+		{
+			"h": "ironblood_yag"
+		},
+		{
+			"h": "conjure%20cover_vss"
+		},
+		{
+			"h": "arcane%20disturbance_yag"
+		},
+		{
+			"h": "curse%20ward_vss"
+		},
+		{
+			"h": "jethro's%20instant%20reload_vss"
+		},
+		{
+			"h": "petal%20storm_vss"
+		},
+		{
+			"h": "after%20image_vss"
+		},
+		{
+			"h": "sow%20thought_sybilhomebrew"
+		},
+		{
+			"h": "break%20in%20time_sybilhomebrew"
+		},
+		{
+			"h": "aura%20of%20the%20unremarkable_sybilhomebrew"
+		},
+		{
+			"h": "undersong_sybilhomebrew"
+		}
+	],
+	"sources": [
+		"VSS",
+		"ccg",
+		"YAG",
+		"SybilHomebrew"
+	],
+	"name": "AA_Spells",
+	"saveId": "32bda73e-9c2d-4055-b68f-10ec0bff1d0c"
+}
