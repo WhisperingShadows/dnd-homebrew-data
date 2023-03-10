@@ -1,0 +1,4822 @@
+{
+	"siteVersion": "1.177.1",
+	"_meta": {
+		"sources": [
+			{
+				"json": "SybilHomebrew",
+				"abbreviation": "SyBrew",
+				"full": "Sybil Homebrew",
+				"url": "",
+				"authors": [
+					"Dania Miller"
+				],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1678473613,
+		"dateLastModified": 1678473613
+	},
+	"spell": [
+		{
+			"name": "Ability Rip",
+			"source": "SybilHomebrew",
+			"level": 6,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 10
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You can rob a creature of one of its inherent aptitudes and give that capability to an ally. Choose one ability score. One creature of your choice within range makes a saving throw with that ability score. On a failure, the target has disadvantage on checks and saving throws with the chosen ability score. In addition, the target has disadvantage on attack rolls using the chosen ability score, and deals only half damage with such attacks if they are weapon attacks.",
+				"When you cast this spell, choose another willing creature within 30 feet. For the duration, that creature gains advantage on all ability checks and saving throws with the ability score you chose. In addition, that creature gains 25 temporary hit points. ",
+				"At the end of each of the first target’s turns, it can make a saving throw against the spell. It makes the saving throw with the ability score you chose, but the disadvantage inflicted by this spell does not affect saving throws against it. On a successful save, the spell ends. "
+			],
+			"savingThrow": [
+				"strength",
+				"dexterity",
+				"constitution",
+				"intelligence",
+				"wisdom",
+				"charisma"
+			],
+			"miscTags": [
+				"THP"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": []
+			}
+		},
+		{
+			"name": "Ablative Armor",
+			"source": "SybilHomebrew",
+			"level": 1,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a piece of shattered armor"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You touch one suit of armor, which hardens with an extra layer of protection against attacks. The armor gains temporary hit points equal to {@dice 1d4} + your spellcasting ability modifier. While the armor still has these temporary hit points, its wearer has resistance to all damage except psychic damage. Each time the wearer takes damage that is not psychic damage, the same amount of damage is dealt to the armor’s hit points. ",
+				"The spell ends early if the temporary hit points are depleted, if the armor is doffed, or if the spell is cast again on the same suit of armor. You can also dismiss the spell as an action. "
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the temporary hit points increase by 5 for each slot level above 1st. "
+					]
+				}
+			],
+			"miscTags": [
+				"THP"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": []
+			}
+		},
+		{
+			"name": "Abolish Shadows",
+			"source": "SybilHomebrew",
+			"level": 3,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a round, black stone"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"A burst of energy radiates from you in a 30-foot radius, dispelling shadowy foes and magical darkness alike. Creatures of your choice within 30 feet of you must make a Constitution saving throw or take {@damage 4d8} radiant damage. Creatures with vulnerability to radiant damage have disadvantage on this saving throw.",
+				"If the spell’s area overlaps with an area of darkness created by another spell, make an ability check using your spellcasting ability. The DC equals 10 + the other spell level. On a successful check, the other spell ends. Multiple magical darkness spells can be abolished in this way. "
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the radiant damage increases by {@dice 1d8} for each slot level above 3rd, and if the spell’s area overlaps with one or more areas of darkness created by spells of 2nd level or lower, those spells end immediately."
+					]
+				}
+			],
+			"damageInflict": [
+				"radiant"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"S"
+			],
+			"classes": {
+				"fromClassList": []
+			}
+		},
+		{
+			"name": "Absorb Mind",
+			"source": "SybilHomebrew",
+			"level": 3,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a piece of the brain of a recently slain creature"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You touch a corpse that has been dead for less than 1 hour. While you are touching the corpse, you can attempt to draw out and view a memory that the corpse may possess. The corpse must have been alive to create the memory. Make a DC 20 Intelligence (History) check. On a success, you can view the memory with perfect clarity. No one else can see or hear the memory. For the duration, you can use an action to repeat the roll and try to view another memory. If you fail three consecutive rolls, you fall {@condition unconscious} for 1 hour. "
+			],
+			"abilityCheck": [
+				"intelligence"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Necromancer",
+						"source": "VSS"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Witch",
+						"source": "VSS"
+					}
+				]
+			}
+		},
+		{
+			"name": "Absorb Mind",
+			"source": "SybilHomebrew",
+			"level": 3,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a piece of the brain of a recently slain creature"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You touch a corpse that has been dead for less than 1 hour. While you are touching the corpse, you can attempt to draw out and view a memory that the corpse may possess. The corpse must have been alive to create the memory. Make an Intelligence check and add your proficiency bonus. If the result is a 20 or above, you can view the memory with perfect clarity. No one else can see or hear the memory. For the duration, you can use an action to repeat the roll and try to view another memory. If you fail three consecutive rolls, you fall {@condition unconscious} for 1 hour. "
+			],
+			"abilityCheck": [
+				"intelligence"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Absorb Mind [UNFIN.]",
+			"source": "SybilHomebrew",
+			"level": 3,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a piece of the brain of a recently slain creature"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You touch a corpse that has been dead for less than 1 hour. While you are touching the corpse, you can attempt to draw out and view a memory that the corpse may possess. The corpse must have been alive to create the memory. Make a DC 20 Intelligence (History) check. On a success, you can view the memory with perfect clarity. No one else can see or hear the memory. For the duration, you can use an action to repeat the roll and try to view another memory. If you fail three consecutive rolls, you fall {@condition unconscious} for 1 hour. "
+			],
+			"abilityCheck": [
+				"intelligence"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Necromancer",
+						"source": "VSS"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Witch",
+						"source": "VSS"
+					}
+				]
+			}
+		},
+		{
+			"name": "Absorb Strength",
+			"source": "SybilHomebrew",
+			"level": 4,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "when a creature within range is slain"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"As a creature’s spirit exits its body, you reach out and use its essence to make yourself more powerful. You gain 20 temporary hit points and the next spell you cast before the end of your next turn is cast as if it were one spell level higher. If the spell does not benefit from being cast with a higher spell level, then you only receive the temporary hit points. The temporary hit points last until you finish your next long rest. "
+			],
+			"miscTags": [
+				"THP"
+			],
+			"classes": {
+				"fromClassList": []
+			}
+		},
+		{
+			"name": "Absorption Ward",
+			"source": "SybilHomebrew",
+			"level": 9,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"This spell creates an arcane ward that surrounds and protects you, harmlessly absorbing the energy of spells that target you to fuel your own casting. For the duration, you can use the ward as a reaction to absorb a spell that is targeting only you and which does not have an area of effect. The absorbed spell's effect is canceled, and the spell's energy — not the spell itself — is stored in the ward. ",
+				"Once the ward absorbs a spell, you can use the captured spell energy, which has the same level as the spell when it was cast. The ward can absorb a number of spell levels equal to half your level + your spellcasting ability modifier. Once the ward absorbs that number of levels of spell energy, it can't absorb more. If you are targeted by a spell that the ward can't store, the ward has no effect on that spell. You always know how much spell energy your ward has absorbed and how many spell levels are currently stored within it.",
+				"You can convert levels of spell energy stored in your ward to cast spells you have prepared or know, creating new spell slots from the stored energy rather than using slots of your own. You can create spell slots only of a level equal to or lower than your own highest-level spell slots, up to a maximum of 5th level. You use the stored levels of spell energy in place of your own spell slots, but otherwise cast the spell as normal. For example, you can use 3 levels of spells stored in the ward as a 3rd-level spell slot. ",
+				"Any spell levels remaining in the ward when the spell ends are lost. "
+			],
+			"classes": {
+				"fromClassList": []
+			}
+		},
+		{
+			"name": "Accelerate Metabolism",
+			"source": "SybilHomebrew",
+			"level": 5,
+			"school": "T",
+			"time": [
+				{
+					"number": 10,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "incense made from rare herbs worth at least 50 gp, which the spell consumes",
+					"consume": true,
+					"cost": 5000
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"When you finish casting this spell, you light the incense and then touch one target creature to accelerate the vital energies within it. The target must begin a short rest within one minute, otherwise the spell fails. At the end of the short rest, the target regains the maximum number of hit points for each Hit Die spent. In addition, the target can immediately repeat the saving throw for each poison or disease affecting it. On a successful save, the target recovers from that poison or disease. "
+			],
+			"miscTags": [
+				"HL"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": []
+			}
+		},
+		{
+			"name": "Accelerated Movement",
+			"source": "SybilHomebrew",
+			"level": 2,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "a dead cockroach"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"For the duration, it does not cost you extra movement to crawl, climb, squeeze, swim, or move across difficult terrain. "
+			],
+			"classes": {
+				"fromClassList": []
+			}
+		},
+		{
+			"name": "Acid Bolts",
+			"source": "SybilHomebrew",
+			"level": 4,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 150
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You conjure two watery globes of acid that appear in the air next to you. Both globes can target a single creature within range, or you can direct each to strike a different creature within range. For each globe you direct towards it, a target must make a Dexterity saving throw. On a failed save, the target takes {@damage 4d10} acid damage, or half as much damage on a successful one. "
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, the acid damage increases by {@dice 1d10} for each slot level above 4th. "
+					]
+				}
+			],
+			"damageInflict": [
+				"acid"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"ST",
+				"MT"
+			],
+			"classes": {
+				"fromClassList": []
+			}
+		},
+		{
+			"name": "Acid Breath",
+			"source": "SybilHomebrew",
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a handful of ants"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You exhale a 30-foot cone of acid. Each creature within the cone must make a Dexterity saving throw. A target takes {@damage 8d6} acid damage on a failed save, or half as much damage on a successful one. "
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the acid damage increases by {@dice 1d6} for each slot level above 3rd. "
+					]
+				}
+			],
+			"damageInflict": [
+				"acid"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"N"
+			],
+			"classes": {
+				"fromClassList": []
+			}
+		},
+		{
+			"name": "Acid Fog",
+			"source": "SybilHomebrew",
+			"level": 6,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "powdered troll blood"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You choose a 20-foot cube within range and fill it with dense vapors that dissolve flesh and bone. Each creature within the cube must make a Constitution saving throw. A target takes {@damage 6d6} acid damage on a failed save, or half as much damage on a successful one. Any creature that begins its turn inside the cube must make a Constitution saving throw. A creature takes {@damage 6d6} acid damage on a failed save, or half as much on a successful one.",
+				"In addition, the area within the fog is difficult terrain and heavily obscured due to the semisolid nature of the vapors."
+			],
+			"damageInflict": [
+				"acid"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"C"
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"fluff": {
+				"entries": [
+					"Fix doubling"
+				]
+			}
+		},
+		{
+			"name": "Acid For Blood",
+			"source": "SybilHomebrew",
+			"level": 5,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 5
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a slashing weapon"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"As part of the action used to cast this spell, you must make a melee attack with a weapon against one creature within the spell's range, otherwise the spell fails. On a hit, the target suffers the attack's normal effects and takes an extra {@damage 3d6} force damage from the hit. On a miss, the spell ends. ",
+				"If the initial attack hits, at the end of each of the target's turns before the spell ends, the target must succeed on a Wisdom saving throw or take {@damage 5d8} acid damage. On a successful save, the spell ends. "
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 6th level or higher, the acid damage increases by {@dice 1d8} for every slot level above 5th. "
+					]
+				}
+			],
+			"damageInflict": [
+				"acid",
+				"force"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": []
+			}
+		},
+		{
+			"name": "Acid Sheath",
+			"source": "SybilHomebrew",
+			"level": 5,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a vial of acid"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You sheath yourself in acid. You take no damage and can breathe normally. For the duration, at the start of each of your turns, if you have a creature {@condition grappled} or a creature is grappling you, the creature you are in a grapple with takes {@damage 6d6} acid damage.",
+				"In addition, until the spell ends, when a creature damages you with a melee attack, it must make a Dexterity saving throw. It takes {@damage 4d6} acid damage on a failure, or no damage on a success. "
+			],
+			"damageInflict": [
+				"acid"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"fluff": {
+				"entries": [
+					"Wording"
+				]
+			}
+		},
+		{
+			"name": "Acid Storm",
+			"source": "SybilHomebrew",
+			"level": 6,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 150
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a flask of acid"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"A cloud of swirling acid rain engulfs the area in a 20-foot radius, 20-foot-high cylinder. Each creature within the cylinder must make a Dexterity saving throw, taking {@damage 10d8} acid damage on a failed save, or half as much damage on a successful one. "
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 7th level or higher, the amount of acid damage increases by {@dice 1d8} for each slot level above 6th. "
+					]
+				}
+			],
+			"damageInflict": [
+				"acid"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"Y"
+			],
+			"classes": {
+				"fromClassList": []
+			}
+		},
+		{
+			"name": "Acidic Armor",
+			"source": "SybilHomebrew",
+			"level": 6,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You conjure a layer of translucent green energy resembling plate armor, which emits noxious fumes and corrodes attacking enemies. Choose an ally you can see within range. That ally gains resistance against acid damage, and until the spell ends, any creature that touches that ally or hits it with a melee attack while within 5 feet of it takes {@damage 1d10} acid damage."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 6th level or higher, the acid damage increases by {@dice 1d10} for each slot level above 5th. "
+					]
+				}
+			],
+			"damageInflict": [
+				"acid"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": []
+			}
+		},
+		{
+			"name": "Action Trance",
+			"source": "SybilHomebrew",
+			"level": 2,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"m": "licorice root shaving"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You enter a state of pure action, unrestricted by thought, relying on reflex alone. Until the spell ends, you can gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"You can take the Dash, Disengage, or Use an Object action as a bonus action.",
+						"You gain a +2 bonus to AC.",
+						"Whenever you make an attack roll or saving throw before the spell ends, you can roll a {@dice d4} and add the number rolled to the attack roll or saving throw."
+					]
+				},
+				"When the spell ends, you can't move or take actions until the end of your next turn. "
+			],
+			"miscTags": [
+				"MAC"
+			],
+			"classes": {
+				"fromClassList": []
+			}
+		},
+		{
+			"name": "Active Momentum",
+			"source": "SybilHomebrew",
+			"level": 1,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "which you take when you would fail a Wisdom or Intelligence saving throw"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You enter a state of complete instinct, temporarily wiping all thoughts and protecting yourself against attempts to invade or control your mind. You can reroll the failed saving throw that triggered this spell, but must use the new roll, even if it is lower. In addition, until the end of your next turn, you have resistance against psychic damage. "
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a 3rd level spell slot, you cannot be {@condition charmed} or {@condition frightened} until the end of your next turn. If you are already {@condition charmed} or {@condition frightened}, then the condition is suppressed until the end of your next turn. While the condition is suppressed it doesn’t function but the time spent suppressed counts against its duration. "
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			}
+		},
+		{
+			"name": "Adamantine Weapon",
+			"source": "SybilHomebrew",
+			"level": 3,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a nonmagical weapon made of metal"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You touch a weapon, infusing it with adamantine, an almost indestructible material capable of cutting through even steel with ease. You gain a +1 bonus to attack and damage rolls with that weapon, and the weapon deals double damage against structures and objects. The weapon counts as both adamantine and magical, and its hit points are also doubled for the duration. "
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": []
+			}
+		},
+		{
+			"name": "Aegis of Assault",
+			"source": "SybilHomebrew",
+			"level": 3,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "which you take when a creature within range succeeds on a melee attack roll that would hit one of your allies"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"m": "a weapon"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"With a flash of light, you bring instant vengeance to the attacking enemy. As part of the reaction used to cast this spell, you choose to do either one or both of the following: ",
+				{
+					"type": "list",
+					"items": [
+						"Teleport to an unoccupied space, as long as that space is not farther away than you are now from the creature that made the triggering attack.",
+						"Make one melee weapon attack against the attacker if it is within reach. You can use your spellcasting ability instead of Strength for the attack and damage rolls of this attack if you choose. If that attack hits, it deals an extra {@damage 1d4} radiant damage. "
+					]
+				},
+				"If you are unable to do either one, the spell ends. Otherwise, after the triggering attack is resolved, you mark the creature who made that attack until the end of your next turn. While it is within 5 feet of you, a creature marked by you has disadvantage on any attack roll that doesn't target you. This spell ends early if you are {@condition incapacitated} or you die, or if someone else marks the creature. "
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the range increases to 60 feet, and the extra radiant damage inflicted with the melee weapon attack increases by {@dice 1d4} for each slot level above 3rd. "
+					]
+				}
+			],
+			"damageInflict": [
+				"radiant"
+			],
+			"spellAttack": [
+				"M"
+			],
+			"miscTags": [
+				"TP"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": []
+			}
+		},
+		{
+			"name": "Aegis of Ensnarement",
+			"source": "SybilHomebrew",
+			"level": 3,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "which you take when a creature within range succeeds on a melee attack roll that would hit one of your allies"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"m": "a weapon"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"Your magic ensnares an attacking enemy, moving it so its attack targets you instead of your ally. The creature that made the triggering attack roll must roll a Charisma saving throw, which occurs before the attack’s damage is resolved. On a failed save, you teleport it to an unoccupied space within 5 feet of you. It then makes the triggering attack against you instead, comparing the same attack roll to your Armor Class to determine whether it hits or misses you.",
+				"Whether the saving throw succeeds or fails, after the triggering attack is resolved, the attacking creature takes {@damage 1d4} psychic damage and you mark it until the end of your next turn. While it is within 5 feet of you, a creature marked by you has disadvantage on any attack roll that doesn't target you. This spell ends early if you are {@condition incapacitated} or you die, or if someone else marks the creature. "
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the range increases to 60 feet, and the psychic damage increases by {@dice 1d4} for each slot level above 3rd. "
+					]
+				}
+			],
+			"damageInflict": [
+				"force"
+			],
+			"savingThrow": [
+				"charisma"
+			],
+			"miscTags": [
+				"TP"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": []
+			}
+		},
+		{
+			"name": "Aegis of Shielding",
+			"source": "SybilHomebrew",
+			"level": 3,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "which you take when a creature within range succeeds on a melee attack roll that would hit one of your allies"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"m": "a weapon"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You protect your ally with a barrier of {@condition invisible} force. Until the start of their next turn, the target of the triggering attack gains resistance to bludgeoning, piercing, and slashing damage and a +5 bonus to AC, including against the triggering attack.",
+				"After the triggering attack is resolved (whether it hits or misses), the creature that made the attack takes {@damage 1d4} force damage and and you mark it until the end of your next turn. While it is within 5 feet of you, a creature marked by you has disadvantage on any attack roll that doesn't target you. This spell ends early if you are {@condition incapacitated} or you die, or if someone else marks the creature. "
+			],
+			"damageInflict": [
+				"force"
+			],
+			"miscTags": [
+				"MAC"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": []
+			}
+		},
+		{
+			"name": "Aerial Lens",
+			"source": "SybilHomebrew",
+			"level": 3,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a shard of glass"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You must cast this spell in an area of sunlight. You create a magnifying lens in the air above you that concentrates the rays of the sun into a fiery beam of sunlight. For the duration of the spell, you can use a bonus action to direct the beam at one target you can see within range, forcing it to make a Dexterity saving throw. On a failure, the target takes {@damage 3d10} fire damage and is {@condition blinded} for 1 minute. On a success, the target takes half damage and is not {@condition blinded}. A {@condition blinded} target can make another Dexterity saving throw at the end of each of its turns, ending the effect on a success. "
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"conditionInflict": [
+				"blinded"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"SGT",
+				"LGTS"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": []
+			}
+		},
+		{
+			"name": "Afterclap",
+			"source": "SybilHomebrew",
+			"level": 8,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "mummified skin of a beholder"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You choose one creature within range and force it to make a Wisdom saving throw. On a failure, the creature takes all the damage it has suffered since your previous turn. This damage is psychic damage. ",
+				"For example, a giant has taken 30 points of cold damage, 8 points of slashing damage, and 12 points of piercing damage since your last turn. If the giant fails its Wisdom saving throw against this spell, it would immediately take 50 points of psychic damage. "
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": []
+			}
+		},
+		{
+			"name": "Agile Defense",
+			"source": "SybilHomebrew",
+			"level": 1,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"As part of the action of casting this spell, you take the Dodge action. "
+			],
+			"classes": {
+				"fromClassList": []
+			}
+		},
+		{
+			"name": "Air Jaunt",
+			"source": "SybilHomebrew",
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a fan"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You gain the ability to walk on air. You gain a flying speed equal to your walking speed until the end of your next turn, at which point the spell ends, and if you are still aloft, you fall unless you can stop the fall. "
+			],
+			"classes": {
+				"fromClassList": []
+			}
+		},
+		{
+			"name": "Alahandra's Questing Call",
+			"source": "SybilHomebrew",
+			"level": 3,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "miles",
+					"amount": 10
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a looking glass"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"This spell shows you shadowy images of any adventurers that are currently taking a short or long rest. You randomly target one resting adventurer within range. The spell creates an {@condition invisible} sensor directly above the target. You can see through the sensor as if you were there. The sensor moves with the target, remaining directly above it for the duration. A creature that can see {@condition invisible} objects sees the sensor as a luminous orb about the size of your fist. You can communicate telepathically with the resting adventurer, but you can only send a short message of twenty-five words or less. ",
+				"This spell is notoriously fickle and 30% of the time it shows the caster random images from other planes instead."
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": []
+			}
+		},
+		{
+			"name": "Alamanther's Return",
+			"source": "SybilHomebrew",
+			"level": 9,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "which you take when you are targeted by a spell of 8th-level or lower, or included in such a spell’s area of effect"
+				}
+			],
+			"range": {
+				"type": "special"
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a silver mirror worth at least 1,000 gp",
+					"cost": 100000
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You can duplicate the triggering spell, mirroring its magic perfectly. As part of casting this spell, you immediately cast the triggering spell without expending a spell slot. The spell is duplicated perfectly; the spell is cast at the same level as the triggering casting, and any metamagics affecting it are applied to your casting as well. The duplicated spell originates from you, as if you had cast it normally. You choose its targets and use your own statistics for any required rolls, such as spell attacks, damage, and saving throws. "
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Necromancer",
+						"source": "VSS"
+					}
+				]
+			},
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://c.tenor.com/q4JtK5zE67UAAAAC/power-legendary-reverse-card-econowise-reverse-card.gif"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Alicorn Lance",
+			"source": "SybilHomebrew",
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a lock of unicorn mane"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"A transparent alicorn (unicorn horn) forms a few inches above your brow. For the duration, you can use a bonus action during your turn to launch the horn at a creature you can see within range. The target must make a Dexterity saving throw. On a failure, the creature takes {@dice 3d6} radiant damage and is also outlined in silver faerie fire, causing attacks against it to be made with advantage until the start of your next turn. On a success, the target takes half as much radiant damage and suffers no other effects. Once the alicorn is launched, the spell ends. "
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the amount of radiant damage increases by {@dice 1d6} for each slot level above 2nd. "
+					]
+				}
+			],
+			"damageInflict": [
+				"radiant"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"SGT",
+				"SCL"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": []
+			}
+		},
+		{
+			"name": "Alienated Mind",
+			"source": "SybilHomebrew",
+			"level": 1,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "sphere",
+				"distance": {
+					"type": "feet",
+					"amount": 15
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You garble your own thought processes into maddening chaos and then force those thoughts onto everyone around you. Each creature within range must make an Intelligence saving throw. On a failed save, a creature takes {@damage 2d10} psychic damage, and until the end of your next turn it forgets any languages that it knows and is incapable of meaningful communication. On a successful save, the creature takes half as much damage, but suffers no other effects. This spell has no effect on undead or constructs."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@dice 1d10} for each slot level above 1st. "
+					]
+				}
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"savingThrow": [
+				"intelligence"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"areaTags": [
+				"S"
+			],
+			"classes": {
+				"fromClassList": []
+			}
+		},
+		{
+			"name": "Align Weapon",
+			"source": "SybilHomebrew",
+			"level": 2,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "one weapon or fifty projectiles"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"You infuse a weapon you touch with the energies of one of the Outer Planes which correspond strongly to certain ethical or moral alignments. When you cast this spell, choose one of these four planes: ",
+				{
+					"type": "list",
+					"items": [
+						"{@b Elysium (Good):} Aberrations, chromatic dragons, elementals, fiends, or undead. ",
+						"{@b Hades (Evil):} Beasts, celestials, metallic dragons, humanoids, or plants.",
+						"{@b Limbo (Chaos):} Constructs, angels, dragons, devils, or giants.",
+						"{@b Mechanus (Law):} Aberrations, demons, fey, monstrosities, oozes, or undead."
+					]
+				},
+				"Until the spell ends, the weapon inflicts an additional {@damage 2d6} force damage on a successful hit against the types of creatures listed for the chosen plane.",
+				"Your alignment may limit your choice of planar energies when you cast this spell. If you are evil-aligned, you cannot choose Elysium; if you are good-aligned, you cannot choose Hades; if you are lawful in alignment, you cannot choose Limbo; and if your alignment is chaotic, you cannot choose Mechanus. "
+			],
+			"damageInflict": [
+				"force"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": []
+			}
+		},
+		{
+			"name": "Allied Footsteps",
+			"source": "SybilHomebrew",
+			"level": 2,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a piece of parchment"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"Choose a willing target within range. For the duration, you and the target each know your exact direction and distance from each other. The spell will continue to function if you or your target dies. If you or the target travels to a different plane or enters an area where magic does not function (such as an {@spell Antimagic Field}), the spell is temporarily interrupted. "
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": []
+			}
+		},
+		{
+			"name": "Alter Speed",
+			"source": "SybilHomebrew",
+			"level": 2,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You alter the flow of time around you, granting yourself and an ally a crucial moment to reposition yourselves. As part of the bonus action used to cast this spell, you can immediately take the Dash action. This movement does not provoke opportunity attacks. If you move at least 10 feet, any ally within 5 feet of you when you end your movement can immediately use its reaction to move up to its speed. "
+			],
+			"classes": {
+				"fromClassList": []
+			}
+		},
+		{
+			"name": "Amanuensis",
+			"source": "SybilHomebrew",
+			"level": 0,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "any kind of blank paper"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You choose any nonmagical writing you can see within range and it is magically copied onto blank paper you are holding. This spell copies 250 words per minute and creates a perfect duplicate of the original. It does not translate the text or make it clearer.",
+				"Illustrations or magical writings (such as the text of a spellbook, a spell scroll, or a glyph of warding) are not copied at all by this spell. If the original text contains both normal writing and magical writing or illustrations (such as a letter with a glyph of warding or a drawing in one corner), only the normal text is copied.",
+				"You must provide blank paper in some form for the spell to copy the text onto. If a blank sheet is filled with copied text, you must cast the spell again with a new blank sheet of paper to continue copying more text."
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"classes": {
+				"fromClassList": []
+			}
+		},
+		{
+			"name": "Amplify",
+			"source": "SybilHomebrew",
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "a bell or two tiny cymbals"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"For the duration, sounds are massively amplified within a 20-foot-radius sphere centered on a point you choose within range. Any creature or object entirely inside the sphere gains vulnerability to thunder damage if it was not resistant, loses its resistance to thunder if it was resistant, or loses its immunity to thunder and gains resistance to thunder if it was immune. Additionally, any creature entirely inside the sphere has advantage on Wisdom (Perception) checks that rely on hearing.",
+				"If any of this spell's area overlaps with an area of silence created by a spell of 2nd level or lower, the spell that created the silence is dispelled."
+			],
+			"areaTags": [
+				"S"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Investigator",
+						"source": "VSS"
+					}
+				]
+			},
+			"fluff": {
+				"entries": [
+					"This spell was invented by the wizard Kreetag, who was once almost felled because a silenced area prevented him from casting his magic. He set out to create a spell that could be cast in utter silence, even if he was gagged or otherwise unable to speak. With the help of a blacksmith, he fashioned two tiny cymbals of silver and imbued them the magic to penetrate silence.",
+					"These were then attached to a pair of rings, worn on the third and fourth fingers. Kreetag was then able, with a simple tap of his two fingers, dispel any silence which kept his power in check."
+				]
+			}
+		},
+		{
+			"name": "Aura of the Unremarkable",
+			"source": "SybilHomebrew",
+			"level": 3,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "sphere",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a white feather"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					}
+				}
+			],
+			"entries": [
+				"An {@condition invisible} sphere of perception-altering magic surrounds you in a 30-foot radius. Until the spell ends, a creature that enters the spell's area for the first time on a turn or starts its turn there must make a Wisdom saving throw. On a success, the creature is immune to the spell's effects until it starts a turn outside the spell's area. ",
+				"On a failure, you cloud the creature's mind so it regards even the strangest actions as innocuous. On a failure by 5 or more, the creature believes you are performing other actions entirely, such as helping a local or waving to a noble, as determined by the DM. ",
+				"Any hostile actions by you or your allies against a creature or its allies break the effect of the spell for that creature.",
+				"When the spell ends (or when an affected creature moves outside the spell's area), observers see things normally but altered perceptions from the earlier events remain. Each mention of the events as noteworthy (such as being questioned about them by an authority figure) allows an affected creature another Wisdom save to break the effect and remember things normally, unless that creature failed its initial save by 5 or more.",
+				{
+					"type": "inset",
+					"name": "Examples Uses",
+					"entries": [
+						{
+							"type": "list",
+							"items": [
+								"If you and your allies are beating a member of the city guard for information, creatures within the area don’t think this is unusual or cause for alarm.",
+								"If your ally is aiming a crossbow at the queen from a balcony, the affected creatures accept this as normal and unworthy of concern.",
+								"If you rescue a man from a pack of wild wolves, affected creatures will not see your rescue as a heroic action or run from the wolves."
+							]
+						}
+					]
+				}
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"miscTags": [
+				"PRM"
+			],
+			"areaTags": [
+				"S"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Azuth's Alteration Mantle",
+			"source": "SybilHomebrew",
+			"level": 6,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You create a shimmering magical aura around any creature you touch. While casting this spell you name two other spells. The warded creature is immune to all effects of the two spells you name, and whenever it is targeted by one of those spells, it must make a choice between the following two effects: ",
+				{
+					"type": "list",
+					"items": [
+						"{@b Healing:} The warded creature can convert the incoming spell into healing energy. It heals {@dice 1d8} hit points per level of the spell targeting it.",
+						"{@b Return Casting:} The caster of the spell targeting the warded creature becomes the target of that spell instead. For any effects not determined when the spell was initially cast, the warded creature is considered the caster of the spell."
+					]
+				}
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"If you use a spell slot of 7th level, the duration is 8 hours. If you use a spell slot of 8th level, the duration is 24 hours. If you use a 9th level spell slot, the spell lasts until it is dispelled. "
+					]
+				}
+			],
+			"miscTags": [
+				"HL",
+				"PRM",
+				"SCL"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": []
+			}
+		},
+		{
+			"name": "Azuth's Exalted Triad",
+			"source": "SybilHomebrew",
+			"level": 5,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"If you do not have any spells prepared (via the Spellcasting feature of a class that prepares spells, such as wizard, paladin, druid, or cleric), this spell has no effect. When you cast this spell, choose any spell of 1st or 2nd level that you have prepared. Once the spell is chosen, that selection can’t be changed until you cast this spell again. For the duration, you can cast the chosen spell without expending a spell slot. Once you have cast the chosen spell in this way three times, the spell ends."
+			],
+			"classes": {
+				"fromClassList": []
+			}
+		},
+		{
+			"name": "Beguiling Gift",
+			"source": "SybilHomebrew",
+			"level": 1,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 5
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "an object to be offered"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You offer an object to an adjacent creature, and entice it into using or consuming the proffered item. The target must succeed on a Wisdom saving throw or be {@condition charmed} for the duration. Once {@condition charmed}, the target immediately takes the offered object, dropping an already held object if necessary. On its next turn, the target consumes or dons the object, as appropriate for the item in question. For example, an apple would be eaten, a potion consumed, a ring put on a finger, and a sword wielded in a free hand. If the target is physically unable to accept the object, the spell fails. ",
+				"The target is under no obligation to continue consuming or using the item once the spell’s duration has expired, although it may find a cursed item difficult to be rid of."
+			],
+			"conditionInflict": [
+				"charmed"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Witch",
+						"source": "VSS"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Blackmaw's Unbroken Barrier",
+			"source": "SybilHomebrew",
+			"level": 9,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 150
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a bar of adamantine worth at least 200 gp, which the spell consumes",
+					"consume": true,
+					"cost": 20000
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"A massive impenetrable barrier of inky black arcane force springs into existence within range.",
+				"The wall is 1/4 inch thick, up to 50 feet tall, up to 300 feet wide, and lasts until dispelled. If the wall cuts through a creature’s space when it appears, the creature is pushed to one side of the wall (your choice which side).",
+				"Nothing can physically pass through the barrier and it is immune to all damage. A creature that touches the wall or hits it with a melee attack takes {@damage 15d10} force damage and is pushed 10 feet directly away from it.",
+				"The wall also extends into the Ethereal Plane, blocking ethereal travel through it. You are made aware when the wall is attacked or dispelled while you are on the same plane of existence as it. "
+			],
+			"damageInflict": [
+				"force"
+			],
+			"miscTags": [
+				"PRM"
+			],
+			"areaTags": [
+				"W"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Necromancer",
+						"source": "VSS"
+					}
+				]
+			}
+		},
+		{
+			"name": "Blade Brothers",
+			"source": "SybilHomebrew",
+			"level": 2,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					}
+				},
+				{
+					"type": "permanent",
+					"ends": [
+						"discharge"
+					]
+				}
+			],
+			"entries": [
+				"You reach out and touch two creatures, briefly forming a sparking tether of multicolored light between them. One time during the duration of this spell, when one creature affected by the spell attempts a saving throw, both creatures can roll and apply the more favorable result. When rolling, each creature uses their own save bonuses and save modifiers. If both saving throws fail, both creatures suffer the consequences of a failed save, even if the effect that prompted the saving throw only affected one of the subjects. If the affected creatures ever move more than 120 feet apart from each other, the spell ends."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Blood Money",
+			"source": "SybilHomebrew",
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"As part of this spell’s casting, you must cut one of your hands, releasing a stream of blood that causes you to take {@dice 1d6} necrotic damage. If you cast another spell before this spell ends and that spell requires a material component, your blood transforms into one material component of your choice required by that second spell. ",
+				"Valuable components worth more than 1 gp can be created, but creating such material components reduces your Strength score by 1, plus 1 for every 500 gp of the component’s value. The reduction lasts until you finish a long rest. You cannot create magic items with this spell.",
+				"Material components created by this spell transform back into blood at the end of the spell's duration if they have not been used as a material component. Spellcasters who do not have blood cannot cast this spell, and those whose Strength score cannot be reduced (such as undead spellcasters) cannot use this spell to create valuable material components."
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Witch",
+						"source": "VSS"
+					},
+					{
+						"name": "Necromancer",
+						"source": "VSS"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Martyr",
+						"source": "VSS"
+					}
+				]
+			},
+			"fluff": {
+				"entries": [
+					"For example, a sorcerer with the spell {@spell Stoneskin} could cast this spell to create the 100 gp worth of diamond dust required, taking {@dice 1d6} points of damage and losing 1 point of Strength in the process."
+				]
+			}
+		},
+		{
+			"name": "Break in Time",
+			"source": "SybilHomebrew",
+			"level": 3,
+			"school": "T",
+			"subschools": [
+				"chronomancy"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "which you take when another creature ends its turn"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You briefly stop the flow of time for everyone but yourself. No time passes for other creatures, while you take a single turn, during which you can use actions and move as normal.",
+				"This spell ends if one of the actions you use during this period, or any effects that you create during this period, affects a creature other than you or an object being worn or carried by someone other than you.",
+				"When this spell ends, you are {@condition incapacitated} until the end of your next turn."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Crafter's Fortune",
+			"source": "SybilHomebrew",
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a tool"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "day",
+						"amount": 7
+					}
+				},
+				{
+					"type": "permanent",
+					"ends": [
+						"discharge"
+					]
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"A creature you can see within range is struck by inspiration and gains a +5 bonus on its next ability check made to craft an item or otherwise employ the tool used as the spell's material component."
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Artificer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Create Component Schema [NOT FINISHED]",
+			"source": "SybilHomebrew",
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"meta": {
+				"ritual": true,
+				"technomagic": true
+			},
+			"entries": [
+				"Choose any number of Components which you are aware of within range. Each Component must be connected to every other Component, although the connection path needs not be direct."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Divine Image",
+			"source": "SybilHomebrew",
+			"level": 3,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "miles",
+					"amount": 100
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a focus worth at least 100 gp, such as a crystal ball or a silver mirror",
+					"cost": 10000
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					}
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"You ask a simple question of eight words or fewer and a still image appears in the focus, displaying a scene which answers your question, provided that the answer can be found within range. The image lasts for 1 minute or until you dismiss it (no action required).",
+				"The following limitations apply:",
+				{
+					"type": "list",
+					"items": [
+						"You cannot ask about something that happened in the past. Thus, \"Who killed the king?\" would fail, but \"Where is the king's killer?\" might show an image of a local tavern.",
+						"You cannot ask about something that will happen in the future. Thus, \"How will the enemy army approach the castle?\" would fail, but \"Where is the enemy's army now?\" might show an image of their encampment.",
+						"The image shown provides no other clues, such as exact location or identity. Thus, if you ask \"Where did I put my keys?\", and you left them in your coat pocket, you would see an image of your coat, but you wouldn't learn your coat's current location or which pocket you left the keys in.",
+						"Answers to subjective questions use your own opinion. Thus, \"Who is the fairest in the land?\" would show an image of the fairest person using your personal definition of \"fairest\" (as above, you wouldn't learn that person's identity or whereabouts)."
+					]
+				},
+				"If you cast this spell and ask the same question two or more times before completing your next long rest, there is a cumulative {@chance 25|||Failed casting!|Successful casting} chance for each casting after the first that the spell fails."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Witch",
+						"source": "VSS"
+					},
+					{
+						"name": "Necromancer",
+						"source": "VSS"
+					}
+				]
+			}
+		},
+		{
+			"name": "Eavesdrop",
+			"source": "SybilHomebrew",
+			"level": 1,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "a hollow metal cylinder"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"For the duration, sounds within a 20-foot-radius sphere centered on a point you choose within range are reduplicated next to you. You hear every sound in the area as if the source were directly next to you, allowing you to easily hear footsteps in a different hall or whispered conversations behind a closed door.",
+				"If the point you choose is on an object or creature, the sphere emanates from the object or creature and moves with it. If you target an unwilling creature or an object held or worn by an unwilling creature, that creature must succeed on a Wisdom saving throw to avoid the spell."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd or 3rd level, the duration is concentration, up to 10 minutes. If you use a spell slot of 4th level, the duration is concentration, up to 1 hour. If you use a spell slot of 5th level or higher, the duration is concentration, up to 8 hours.",
+						"Additionally, when you cast this spell using a spell slot of 3rd level or higher, every sound in the area is directly projected into your mind, allowing you to perfectly perceive all sounds in the area for the duration of the spell (without requiring a roll)."
+					]
+				}
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"areaTags": [
+				"S"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Investigator",
+						"source": "VSS"
+					}
+				]
+			}
+		},
+		{
+			"name": "Elven Perception",
+			"source": "SybilHomebrew",
+			"level": 2,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "an object created by or belonging to a creature of elven descent"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You cause a subjective amplification of all sounds within the spell’s area for you and your companions. For the duration, each creature you choose within 30 feet of you (including you) has a +10 bonus to Wisdom (Perception) checks that rely on hearing and can't be surprised by a creature that makes sound."
+			],
+			"areaTags": [
+				"MT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Investigator",
+						"source": "VSS"
+					}
+				]
+			}
+		},
+		{
+			"name": "Enhance Poison",
+			"source": "SybilHomebrew",
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a licorice root"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					}
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"Ribbons of green and black energy engulf your hand and pass into a poison to increase its lethality. You touch a single vial of poison, which then gains a +2 bonus to its saving throw DCs for the duration.",
+				"Alternatively, you may touch a single creature capable of inflicting the {@condition poisoned} condition, which then gains a +1 bonus to the saving throw DCs of its poisons for the duration."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"If you cast this spell using a spell slot of 2nd level, the duration is 1 hour. If you use a spell slot of 3rd level, the duration is 8 hours. If you use a spell slot of 4th level, the duration is 24 hours. If you use a spell slot of 5th level or higher, the spell lasts until it is dispelled. ",
+						"Additionally, using a spell slot of 2nd level or higher increases a vial's bonus by an additional +1 for each slot level above 1st, and increases a creature's bonus by an additional +1 for every 2 slot levels above 1st."
+					]
+				}
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Necromancer",
+						"source": "VSS"
+					},
+					{
+						"name": "Witch",
+						"source": "VSS"
+					}
+				]
+			}
+		},
+		{
+			"name": "Flash Recall",
+			"source": "SybilHomebrew",
+			"level": 2,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a piece of string, some ink, and an ivory plaque worth at least 100 gp",
+					"cost": 10000
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"When you cast this spell, you channel divinatory magic into your memory to instantly recall an unprepared spell at the cost of another.",
+				"Prepare a single spell of 2nd level or lower from your spellbook (if you are a wizard) or from your class spell list (if you are not a wizard). The chosen spell replaces another spell of an equal or higher level that you had previously prepared, removing it from your list of prepared spells. ",
+				"This spell automatically fails if you do not prepare spells. "
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the maximum spell level of the prepared spell increases by 1 for each slot level above 3rd."
+					]
+				}
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Heightened Awareness",
+			"source": "SybilHomebrew",
+			"level": 1,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"m": "a coffee bean"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You enter a heightened state of awareness that allows you to notice more about your surroundings and recall information effortlessly. For the duration, you gain a +2 bonus on Wisdom (Perception) checks and on all Intelligence checks which use a skill you have proficiency with.",
+				"If you roll for initiative before this spell ends, you can instantly end this spell and gain a +5 bonus on the roll."
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Witch",
+						"source": "VSS"
+					}
+				]
+			}
+		},
+		{
+			"name": "Improvisation",
+			"source": "SybilHomebrew",
+			"level": 1,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a pair of dice"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You gain access to a floating “pool” of luck, which manifests as 3 bonus points you can use as desired to twist fate in your favor. Whenever you make an attack roll, an ability check, or a saving throw, you can spend up to 2 bonus points to grant yourself a bonus to that roll equal to the number spent. You must choose how many, if any, bonus points you use before the roll is made. Used points disappear from the pool, and any points remaining when the spell ends are wasted. "
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the amount of bonus points gained increases by 3 and the maximum number you can use at once increases by 1 for each slot level above 1st."
+					]
+				}
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Keep Watch",
+			"source": "SybilHomebrew",
+			"level": 1,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 15
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 8
+					}
+				}
+			],
+			"entries": [
+				"Up to six creatures of your choice within range each gain the ability to stand watch or keep vigil throughout the night without any ill effects.",
+				"The targets suffer no fatigue and gain all the usual benefits of a full night’s rest.",
+				"The targets gain hit points as though from resting, spellcasters may prepare their spells, and so on. Effects that rely on actual sleep or dreaming are ineffective, though the targets are still susceptible to effects that would put them to sleep, such as the {@spell Sleep} spell. Any vigorous activity, including fighting, immediately ends this spell, and the affected creatures must either have the spell cast on them again or sleep for the remaining hours to avoid fatigue and gain the benefits of a full night’s rest."
+			],
+			"areaTags": [
+				"MT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Witch",
+						"source": "VSS"
+					}
+				]
+			}
+		},
+		{
+			"name": "Long Arms",
+			"source": "SybilHomebrew",
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					}
+				}
+			],
+			"entries": [
+				"You touch a creature, causing their arms to temporarily grow in length and increasing their reach with those limbs by 5 feet."
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Witch",
+						"source": "VSS"
+					},
+					{
+						"name": "Necromancer",
+						"source": "VSS"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Mantle of Unassailable Flame",
+			"source": "SybilHomebrew",
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"With a few words, you wreathe yourself in magical flames that shed bright light in a 10-foot radius and dim light for an additional 10 feet. The flames do not harm you or any of your belongings. ",
+				"For the duration, any creature that makes a melee weapon attack against you takes {@dice 1d10} points of fire damage and must succeed on a Constitution saving throw or drop their weapon. If the creature can’t drop the weapon, it has disadvantage on attack rolls and ability checks until the start of your next turn.",
+				"Additionally, as a reaction whenever a creature makes a weapon attack against you, you may use the flames in an attempt to destroy the weapon. The creature must succeed on a Dexterity saving throw or have its weapon incinerated. Non-magical weapons are destroyed before hitting you, dealing no damage, but the flames are ineffective against magical or natural weapons.  "
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, the damage increases by {@dice 1d10} for every two slot levels above 3rd."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Moon Ward",
+			"source": "SybilHomebrew",
+			"level": 0,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You extend your hand and trace an arcane sigil of the moon in the air. Until the end of your next turn, you have resistance against damage dealt by spells or magic weapons."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Overwhelming Presence",
+			"source": "SybilHomebrew",
+			"level": 7,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a swan feather"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"Your presence inspires incredible awe in those nearby. Each creature of your choice that is aware of you within range must make a Wisdom saving throw. A creature automatically succeeds if it is immune both to being {@condition charmed} and being {@condition frightened}. On a failed save, a creature becomes overwhelmed for the duration. The creature can repeat this saving throw at the end of each of its turns, ending the effect on itself on a success.",
+				"A creature that fails a save against this spell falls to the ground and prostrates itself before you, believing it must bow before a divine presence. A flying creature incapable of hovering must land immediately in order to prostrate itself. These creatures are considered to be helpless for the duration of the spell. ",
+				"These creatures are considered {@condition prone}, cannot take actions or reactions, automatically fail Strength and Dexterity saving throws, and have a movement speed of 0. Additionally, attack rolls against these creatures have advantage and any attack that hits the creature is automatically a critical hit if the attacker is within 5 feet of the creature.",
+				"A creature that recovers from this spell early after being affected by it for at least 1 round is staggered for {@dice 1d4} rounds. A creature that makes the initial save to resist this spell is only staggered for 1 round. While staggered, a creature may either use their movement or use an Action on their turn, but not both."
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"areaTags": [
+				"MT",
+				"S"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Necromancer",
+						"source": "PHB"
+					},
+					{
+						"name": "Witch",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Rage",
+			"source": "SybilHomebrew",
+			"level": 2,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You fill up to three creatures you can see within range with blinding rage. An unwilling target can make a Charisma saving throw and end the effect on itself with a success. A target affected by this spell has advantage on Strength attack rolls, ability checks, and saving throws; its melee weapon attacks deal an additional {@damage 2d6} damage; and the target gains resistance to bludgeoning, piercing, and slashing damage. However, at the end of each of the target’s turns, it takes {@damage 1d6} psychic damage"
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"savingThrow": [
+				"charisma"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"areaTags": [
+				"MT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Necromancer",
+						"source": "VSS"
+					},
+					{
+						"name": "Witch",
+						"source": "VSS"
+					}
+				]
+			}
+		},
+		{
+			"name": "Recursive Descent",
+			"source": "SybilHomebrew",
+			"level": 9,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"Choose one creature within range. It must succeed on an Intelligence saving throw or be immediately stuck in a millisecond long recursive memory loop. Creatures with an Intelligence score greater than 24 or immunity to psychic damage are immune to this spell.",
+				"A target affected by this spell is {@condition incapacitated}, can’t move or speak, and is unaware of its surroundings. It drops whatever it’s holding, and it automatically fails Strength and Dexterity saving throws. Attack rolls against the target have advantage, and any attack that hits it is a critical hit if the attacker is within 5 feet.",
+				"In addition, the target cannot be {@condition charmed}, {@condition frightened}, or take psychic damage thanks to the mental stasis caused by this powerful curse.",
+				"Casting {@spell Greater Restoration} on an affected target releases it from this spell’s effect for 24 hours, at which point the curse resumes (no additional saving throw). You can use a bonus action to release the target, but otherwise without the intervention of a deity or similarly powerful entity this effect can only be ended through the use of a {@spell Wish} spell, {@spell Dispel Magic} (with an ability check made with disadvantage if cast using a spell slot of 8th level or lower), or by the affected creature’s death."
+			],
+			"savingThrow": [
+				"intelligence"
+			],
+			"miscTags": [
+				"PRM"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Savvy Strike (AHL, A1+)",
+			"source": "SybilHomebrew",
+			"level": 0,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "a weapon"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"One creature within your reach or the range of the weapon used in the spell's casting must make an Intelligence saving throw or be fooled by the deceptive nature of your strike. On a failure, you automatically hit the target with the weapon used and must roll a {@dice d10}. On a 10, the attack is a critical hit. ",
+				"At 5th level, the {@dice d10} rolled to determine whether the attack is a critical is also added to the damage of the attack. At 11th level, you may roll {@dice 2d10} instead and choose which {@dice d10} to use. At 17th level, you may add both d10s to the damage of the attack."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"You may cast this cantrip using a spell slot. When you cast this spell using a spell slot, the damage increases by {@dice 1d10} for each slot level."
+					]
+				}
+			],
+			"damageInflict": [
+				"acid",
+				"bludgeoning",
+				"cold",
+				"fire",
+				"force",
+				"lightning",
+				"necrotic",
+				"piercing",
+				"poison",
+				"psychic",
+				"radiant",
+				"slashing",
+				"thunder"
+			],
+			"savingThrow": [
+				"intelligence"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Necromancer",
+						"source": "VSS"
+					},
+					{
+						"name": "Soulshaper",
+						"source": "ccg"
+					},
+					{
+						"name": "Warmage",
+						"source": "VSS"
+					},
+					{
+						"name": "Witch",
+						"source": "VSS"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcana Domain",
+							"shortName": "Arcana",
+							"source": "SCAG"
+						}
+					},
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Alchemist",
+							"source": "VSS"
+						},
+						"subclass": {
+							"name": "Dynamo Engineer",
+							"shortName": "Dynamo Engineer",
+							"source": "VSS"
+						}
+					}
+				]
+			},
+			"races": [
+				{
+					"name": "Elf (High)",
+					"source": "PHB",
+					"baseName": "Elf",
+					"baseSource": "PHB"
+				},
+				{
+					"name": "Elf (High; Aereni)",
+					"source": "UAWGE",
+					"baseName": "Elf",
+					"baseSource": "PHB"
+				},
+				{
+					"name": "Elf (High; Valenar)",
+					"source": "UAWGE",
+					"baseName": "Elf",
+					"baseSource": "PHB"
+				},
+				{
+					"name": "Half-Elf (Variant; Moon Elf or Sun Elf Descent)",
+					"source": "SCAG",
+					"baseName": "Half-Elf",
+					"baseSource": "PHB"
+				},
+				{
+					"name": "Kobold",
+					"source": "MPMM"
+				},
+				{
+					"name": "Merfolk (Ixalan; Blue)",
+					"source": "PSX",
+					"baseName": "Merfolk (Ixalan)",
+					"baseSource": "PSX"
+				},
+				{
+					"name": "Merfolk (Zendikar; Cosi Creed)",
+					"source": "PSZ",
+					"baseName": "Merfolk (Zendikar)",
+					"baseSource": "PSZ"
+				},
+				{
+					"name": "Merfolk (Zendikar; Ula Creed)",
+					"source": "PSZ",
+					"baseName": "Merfolk (Zendikar)",
+					"baseSource": "PSZ"
+				},
+				{
+					"name": "Tiefling (Abyssal)",
+					"source": "UAThatOldBlackMagic",
+					"baseName": "Tiefling",
+					"baseSource": "PHB"
+				}
+			],
+			"optionalfeatures": [
+				{
+					"name": "Pact of the Tome",
+					"source": "PHB",
+					"featureType": [
+						"PB"
+					]
+				}
+			],
+			"feats": [
+				{
+					"name": "Aberrant Dragonmark",
+					"source": "ERLW"
+				},
+				{
+					"name": "Magic Initiate",
+					"source": "PHB"
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Is this yet another {@spell True Strike} rework? Maybe. Maybe."
+				]
+			}
+		},
+		{
+			"name": "Secluded Grimoire",
+			"source": "SybilHomebrew",
+			"level": 1,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"This spell sends a spellbook you touch into a random but safe location on the Ethereal Plane, where it remains indefinitely. When you cast this spell, the target spellbook dissolves into quickly fading lines of energy and runes that reflect all of the spells stored within. Thereafter, you can retrieve the spellbook as an action, causing it to reappear in your hands. You cannot cast this spell on another spellbook if you currently have a spellbook in the Ethereal Plane. No other creatures or objects accompany the spellbook you send away, and the duration of any spells currently affecting the spellbook continue normally."
+			],
+			"miscTags": [
+				"PRM"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Silvery Barbs",
+			"source": "SybilHomebrew",
+			"level": 1,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "which you take when a creature you can see within range succeeds on an attack roll, an ability check, a saving throw against a non-spell effect, or a saving throw against a spell of a level up to 1 level higher than the spell slot you used"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You magically distract the triggering creature and turn its momentary uncertainty into encouragement for another creature. The triggering creature must reroll the {@dice d20} and use the lower roll.",
+				"You can then choose a different creature you can see within range (you can choose yourself). The chosen creature has advantage on the next attack roll, ability check, or saving throw it makes within 1 minute. A creature can be empowered by only one use of this spell at a time."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the maximum triggering spell level for which you can affect a saving throw is increased by 1 for each level above 1st."
+					]
+				}
+			],
+			"miscTags": [
+				"SGT",
+				"SCL"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Sonorous Hum",
+			"source": "SybilHomebrew",
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					}
+				}
+			],
+			"entries": [
+				"The area around you comes abuzz with a low, droning hum that improves your concentration.",
+				"The next spell you cast which requires concentration is assisted by this spell. The assisted spell automatically ends when this spell ends, if it has not already ended by then, and does not prevent you from concentrating on another spell. If you are forced to make a Constitution saving throw to maintain concentration while concentrating on another spell, roll separately for each spell. ",
+				"The sound created by this spell can easily be heard with a DC 5 Wisdom (Perception) check by any creature within 30 feet.",
+				"You can end this spell as a free action."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Soul Vault",
+			"source": "SybilHomebrew",
+			"level": 3,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					}
+				}
+			],
+			"entries": [
+				"This spell protects the target’s soul by briefly enveloping their soul in an ethereal vault. For the duration, the target's soul is bound to their body, even after death. The target gains a +5 bonus on saving throws against spells and effects that would trap or redirect its soul (such as {@spell magic jar}, {@spell soul bind}, and {@spell imprisonment}) and effects that would transform the target into an undead creature. The target is granted a save to negate such effects even if one is not normally allowed. ",
+				"If the spell is cast on a living creature that then dies, the target’s body and spirit are protected by the spell for its duration. If the spell is cast on a corpse within 1 round of death, the target’s body and soul are both protected. Otherwise, only the body receives the protection. If the target is unwilling, it can make a Wisdom saving throw. On a success, the spell has no effect.",
+				"This spell can be made permanent with the {@spell permanency} spell at a cost of 7,500 gp (minimum caster level of 11th)."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"If you cast this spell using a spell slot of 4th level or higher, the duration is 1 hour. If you use a spell slot of 5th level or higher, the duration is 8 hours. If you use a spell slot of 7th level or higher, the duration is 24 hours."
+					]
+				}
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Necromancer",
+						"source": "VSS"
+					},
+					{
+						"name": "Witch",
+						"source": "VSS"
+					},
+					{
+						"name": "Investigator",
+						"source": "VSS"
+					},
+					{
+						"name": "Martyr",
+						"source": "VSS"
+					}
+				]
+			}
+		},
+		{
+			"name": "Sow Thought",
+			"source": "SybilHomebrew",
+			"level": 1,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "permanent",
+					"ends": [
+						"dispel"
+					]
+				}
+			],
+			"entries": [
+				"You attempt to plant an idea, concept, or suspicion in the mind of one creature you can see within range. The target must make an Intelligence saving throw. The target succeeds automatically if it is immune to being {@condition charmed}. On a failure, the target genuinely believes that the idea is their own, but is not required to act upon it. If the idea is contrary to the target’s normal thoughts (such as making a paladin think, “I should murder my friends”) the target may suspect mind-altering magic is at play. The idea must be fairly clear, enough so that it can be conveyed in one or two sentences. You do not need to share a common language for the spell to succeed, but without a common language you can only sow the most basic rudimentary ideas."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them."
+					]
+				}
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"miscTags": [
+				"SGT",
+				"PRM",
+				"SCL"
+			],
+			"areaTags": [
+				"ST",
+				"MT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Witch",
+						"source": "VSS"
+					},
+					{
+						"name": "Necromancer",
+						"source": "VSS"
+					}
+				]
+			}
+		},
+		{
+			"name": "Starburst",
+			"source": "SybilHomebrew",
+			"level": 0,
+			"school": "V",
+			"subschools": [
+				"Constellation"
+			],
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You cause a mote of starlight to appear and burst with radiance in a 5-foot cube you can see within range. If a creature is in the cube, it must succeed on a Charisma saving throw or take {@damage 1d8} radiant damage.",
+				"The spell's damage increases by {@dice 1d8} when you reach 5th level ({@dice 2d8}), 11th level ({@dice 3d8}), and 17th level ({@dice 4d8})."
+			],
+			"damageInflict": [
+				"radiant"
+			],
+			"savingThrow": [
+				"charisma"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"areaTags": [
+				"C"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Swordshun",
+			"source": "SybilHomebrew",
+			"level": 4,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a bejeweled weapon worth at least 50 gp",
+					"cost": 5000
+				}
+			},
+			"duration": [
+				{
+					"type": "permanent",
+					"ends": [
+						"dispel"
+					]
+				}
+			],
+			"entries": [
+				"As you cast this spell, you plunge the weapon used as part of the casting into the side of your own body. You or any other creature within 5 feet of you can end this spell instantly by removing this weapon from your side, which requires only a DC 5 Strength (Atheltics) check. Until the spell ends, you take {@dice 1d6} magical piercing that cannot be reduced by any means at the start of each of your turns, and you cannot regain hit points, but you are immune to nonmagical bludgeoning, piercing, and slashing damage. "
+			],
+			"damageInflict": [
+				"piercing"
+			],
+			"abilityCheck": [
+				"strength"
+			],
+			"miscTags": [
+				"PRM"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Necromancer",
+						"source": "VSS"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Timed Delay",
+			"source": "SybilHomebrew",
+			"level": 1,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "10 gp of white sand and powdered gems, which the spell consumes",
+					"consume": true,
+					"cost": 1000
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"For the duration, whenever you cast a spell you may choose to delay its activation by up to 1 minute. Once you choose to delay a spell, this spell ends.",
+				"Though a delayed spell does not manifest until the duration of delay has elapsed, a {@spell Detect Magic} or similar effect will still reveal its presence."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"If you cast this spell using a spell slot of 3rd level or higher, the maximum delay is up to 10 minutes. If you use a spell slot of 5th level or higher, the maximum delay is up to 8 hours. If you use a spell slot of 7th level or higher, the maximum delay is up to 24 hours. If you use a 9th level spell slot, there is no maximum duration for the delay. "
+					]
+				}
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Timely Inspiration",
+			"source": "SybilHomebrew",
+			"level": 1,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "a creature you can see within range fails an attack roll or ability check"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"A word of arcane-empowered inspiration can snatch victory from seeming defeat. The target gains a bonus on the triggering attack roll or ability check equal to half your spellcasting modifier (rounded up), potentially turning a failure into a success"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the bonus increases by 1 for each slot level above 1st."
+					]
+				}
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "True Strike (Adv, AHL, A1+)",
+			"source": "SybilHomebrew",
+			"level": 0,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					}
+				}
+			],
+			"entries": [
+				"You gain temporary, intuitive insight into the immediate future during your next attack. You gain advantage on your next attack roll, provided that this spell hasn't ended.",
+				"This spell grants an additional instance of advantage when you reach 5th level (2x advantage), 11th level (3x advantage), and 17th level (4x advantage)."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"You may cast this cantrip using a spell slot. When you cast this spell using a spell slot, this spell grants an additional instance of advantage for each slot level."
+					]
+				}
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Necromancer",
+						"source": "VSS"
+					},
+					{
+						"name": "Soulshaper",
+						"source": "ccg"
+					},
+					{
+						"name": "Warmage",
+						"source": "VSS"
+					},
+					{
+						"name": "Witch",
+						"source": "VSS"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcana Domain",
+							"shortName": "Arcana",
+							"source": "SCAG"
+						}
+					},
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Alchemist",
+							"source": "VSS"
+						},
+						"subclass": {
+							"name": "Dynamo Engineer",
+							"shortName": "Dynamo Engineer",
+							"source": "VSS"
+						}
+					}
+				]
+			},
+			"races": [
+				{
+					"name": "Elf (High)",
+					"source": "PHB",
+					"baseName": "Elf",
+					"baseSource": "PHB"
+				},
+				{
+					"name": "Elf (High; Aereni)",
+					"source": "UAWGE",
+					"baseName": "Elf",
+					"baseSource": "PHB"
+				},
+				{
+					"name": "Elf (High; Valenar)",
+					"source": "UAWGE",
+					"baseName": "Elf",
+					"baseSource": "PHB"
+				},
+				{
+					"name": "Half-Elf (Variant; Moon Elf or Sun Elf Descent)",
+					"source": "SCAG",
+					"baseName": "Half-Elf",
+					"baseSource": "PHB"
+				},
+				{
+					"name": "Kobold",
+					"source": "MPMM"
+				},
+				{
+					"name": "Merfolk (Ixalan; Blue)",
+					"source": "PSX",
+					"baseName": "Merfolk (Ixalan)",
+					"baseSource": "PSX"
+				},
+				{
+					"name": "Merfolk (Zendikar; Cosi Creed)",
+					"source": "PSZ",
+					"baseName": "Merfolk (Zendikar)",
+					"baseSource": "PSZ"
+				},
+				{
+					"name": "Merfolk (Zendikar; Ula Creed)",
+					"source": "PSZ",
+					"baseName": "Merfolk (Zendikar)",
+					"baseSource": "PSZ"
+				},
+				{
+					"name": "Tiefling (Abyssal)",
+					"source": "UAThatOldBlackMagic",
+					"baseName": "Tiefling",
+					"baseSource": "PHB"
+				}
+			],
+			"optionalfeatures": [
+				{
+					"name": "Pact of the Tome",
+					"source": "PHB",
+					"featureType": [
+						"PB"
+					]
+				}
+			],
+			"feats": [
+				{
+					"name": "Aberrant Dragonmark",
+					"source": "ERLW"
+				},
+				{
+					"name": "Magic Initiate",
+					"source": "PHB"
+				}
+			]
+		},
+		{
+			"name": "True Strike (Bonus)",
+			"source": "SybilHomebrew",
+			"level": 1,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"m": "small wooden replica of an archery target"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					}
+				}
+			],
+			"entries": [
+				"You gain temporary, intuitive insight into the immediate future during your next attack. You gain a +10 bonus to your next single attack roll, provided that this spell hasn't ended. This attack ignores half cover and three-quarters cover and is not affected by disadvantage."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the bonus increases by 3 for each slot level above 1st."
+					]
+				}
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Necromancer",
+						"source": "VSS"
+					},
+					{
+						"name": "Soulshaper",
+						"source": "ccg"
+					},
+					{
+						"name": "Witch",
+						"source": "VSS"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Alchemist",
+							"source": "VSS"
+						},
+						"subclass": {
+							"name": "Dynamo Engineer",
+							"shortName": "Dynamo Engineer",
+							"source": "VSS"
+						}
+					}
+				]
+			},
+			"feats": [
+				{
+					"name": "Aberrant Dragonmark",
+					"source": "ERLW"
+				},
+				{
+					"name": "Magic Initiate",
+					"source": "PHB"
+				}
+			]
+		},
+		{
+			"name": "Undersong",
+			"source": "SybilHomebrew",
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 8
+					}
+				}
+			],
+			"entries": [
+				"When you cast this spell, a familiar and soothing song wells up in your mind. The song does not distract you from any task at hand — on the contrary, by humming along to the tune you can focus your mind with ease. For the duration, whenever you make a Constitution saving throw to maintain your concentration on a spell, you can choose to make a Charisma (Performance) check, substituting the result of that roll for the result of a Constitution save. "
+			],
+			"abilityCheck": [
+				"charisma"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Unleash Devastation",
+			"source": "SybilHomebrew",
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"Before casting your next spell, you use this one to marshal all of your magical might and infuse it with additional destructive power. Until the end of your next turn, when you roll damage for a spell, you can reroll as many of the damage dice as you wish. You must use the new rolls. "
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Unseen Staff",
+			"source": "SybilHomebrew",
+			"level": 3,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a bit of string and wood"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"This spell creates six {@condition invisible}, mindless, shapeless, Medium unseen servants that perform simple tasks at your command until the spell ends. The servants springs into existence in unoccupied spaces on the ground within range. Each servant has AC 10, 1 hit point, and a Strength of 2, and it can't attack. If it drops to 0 hit points, the spell ends.",
+				"Once on each of your turns as a bonus action, you can mentally command any number of servant to move up to 15 feet and interact with an object. Each servant can perform simple tasks that a human servant could do, such as fetching things, cleaning, mending, folding clothes, lighting fires, serving food, and pouring wine. Once you give the command, a servant performs the task to the best of its ability until it completes the task, then waits for your next command.",
+				"If you command a servant to perform a task that would move it more than 60 feet away from you, the servant winks out of existence."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Investigator",
+						"source": "VSS"
+					},
+					{
+						"name": "Necromancer",
+						"source": "VSS"
+					},
+					{
+						"name": "Witch",
+						"source": "VSS"
+					}
+				]
+			}
+		},
+		{
+			"name": "Wail Of The Banshee",
+			"source": "SybilHomebrew",
+			"level": 9,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "sphere",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"m": "a lock of hair from a female elf"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You howl with raw, soul-searing hate. Every creature within range that can hear you must make a successful Constitution saving throw or drop to 0 hit points. Any creature whose hit points are already at 0 must make an immediate death saving throw. If the saving throw is successful, it counts as one success. However, if the saving throw fails, the creature dies. This spell has no effect on undead or constructs."
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"S"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Necromancer",
+						"source": "VSS"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Walking Woods",
+			"source": "SybilHomebrew",
+			"level": 4,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				},
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "special"
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"This spell allows you to manipulate plants into moving at your command. There are two possible uses for the spell, granting either immediate or long term benefits.",
+				"If you cast this spell as an action, choose a point within range. Each plant you choose within 20 feet of that point immediately moves to an unoccupied space of your choice within the spell's range. You can also target any Plant creatures you can see within range with this spell, forcing them to make a Wisdom saving throw. On a failed save, a creature must immediately use its reaction, if it can, to move up to its speed in a direction of your choice. The creature doesn't move into obviously dangerous ground, such as a fire or a pit.",
+				"If you cast this spell over 1 minute, you gain sustained control of each plant within the spell's range for 1 hour, requiring concentration. When you cast the spell, and as an action on each of your turns for the duration, you can move all plant-life within the spell's range to an unoccupied space within the spell's range.",
+				"A plant can only move to a space capable of sustaining it, such as an area of earth for a tree. A plant's movement doesn't have enough force to cause damage, and if a creature would be surrounded on all sides by plants as a result, it can make a Dexterity saving throw. On a success, it is harmlessly pushed to the nearest unoccupied space outside of the enclosing plants. "
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, the range of the spell increases by 30 feet for each slot level above 4th."
+					]
+				}
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"miscTags": [
+				"FMV"
+			],
+			"areaTags": [
+				"S"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			}
+		}
+	]
+}
