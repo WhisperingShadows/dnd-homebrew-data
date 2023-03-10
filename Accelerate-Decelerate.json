@@ -1,0 +1,70 @@
+{
+	"name": "Accelerate/Decelerate",
+	"source": "SybilHomebrew",
+	"level": 1,
+	"school": "T",
+	"subschools": [
+		"chronomancy"
+	],
+	"time": [
+		{
+			"number": 1,
+			"unit": "reaction",
+			"condition": "which you take when a creature you can see within 60 feet is hit with an attack"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "feet",
+			"amount": 60
+		}
+	},
+	"components": {
+		"v": true,
+		"s": true,
+		"m": "a drop of oil or a drop of molasses"
+	},
+	"duration": [
+		{
+			"type": "instant"
+		}
+	],
+	"entries": [
+		"This spell speeds up or slows down an attack the instant before it strikes, lessening or multiplying its force. ",
+		"{@b Accelerate.} Increase the damage the target takes by {@dice 1d8} + your spellcasting modifier. ",
+		"{@b Decelerate.} Reduce the damage the target takes by {@dice 1d8} + your spellcasting modifier (to a minimum of 0 damage). "
+	],
+	"entriesHigherLevel": [
+		{
+			"type": "entries",
+			"name": "At Higher Levels",
+			"entries": [
+				"When you cast this spell using a spell slot of 2nd level or higher, the change in damage increases by {@scaledamage 1d8|1-9|1d8} for each slot level above 1st. "
+			]
+		}
+	],
+	"miscTags": [
+		"SCL",
+		"SGT"
+	],
+	"areaTags": [
+		"ST"
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Wizard",
+				"source": "PHB"
+			},
+			{
+				"name": "Bard",
+				"source": "PHB"
+			},
+			{
+				"name": "Sorcerer",
+				"source": "PHB"
+			}
+		]
+	}
+}
